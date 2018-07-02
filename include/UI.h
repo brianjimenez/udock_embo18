@@ -162,9 +162,7 @@ void docking_UI( SDL_Window* window,scene_docking_data& docking_data ){
 			        double y = coord.y;
 			        double z = coord.z;
 
-
-
-			        fprintf(file, "ATOM  %5d %-4s %3s %1c%4d    %8.3f%8.3f%8.3f", atomnumber, atomname, residName, chainID, residnumber, x, y, z);
+			        fprintf(file, "ATOM  %5d %-5s%3s %1c%4d    %8.3f%8.3f%8.3f", atomnumber, atomname, residName, chainID, residnumber, x, y, z);
 			        fprintf(file, "\n");
 			    }
 			}
